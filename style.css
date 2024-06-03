@@ -1,0 +1,245 @@
+body {
+	font-size: 40 px;
+	line-height: 2;
+	color: #080808;
+	font-weight:800;
+	font-family: 'Montserrat';
+	
+	width:80 %;
+	-moz-background-size: cover;
+	
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-position: center center;
+	padding: 115px 0;
+	
+	background-image: url("arriere.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+ 
+}
+
+
+
+table {
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #080808;
+	border-collapse: separate;
+	border-left: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+  form {
+	border-color: black;
+  }
+
+tr {
+	border-collapse: separate;
+}
+
+th,td {
+	padding: 8px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: top;
+	border-left: 1px solid #111010;
+}
+
+td {
+	border-top: 1px solid #0a0808;
+}
+
+tbody:last-child tr:last-child>td:first-child {
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+}
+
+tbody:last-child tr:last-child>td:last-child {
+	border-bottom-right-radius: 4px;
+}
+
+
+button {
+	padding: 4px 12px;
+	color: #913096;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff),
+		to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	border: 1px solid #cccccc;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-bottom-color: #b3b3b3;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+button:active {
+	-webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	color: #af76a2;
+	background-color: #e6e6e6;
+}
+
+button:hover, button:focus {
+	background-color: #e6e6e6;
+	color: #333333;	
+}
+
+section button {
+	position: absolute;
+	right: 0px;
+	margin-top: 20px;
+}
+
+
+aside {
+	position: absolute;
+	top: 40px;
+	left: 660px;
+	width: 300px;
+	min-height: 20px;
+	padding: 19px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	background-color: rgb(167 117 175);
+	height: 60px;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+
+input {
+	margin-bottom: 10px;
+}
+
+
+label {
+	display: block;
+	display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+label > span {
+	display: inline-block;
+	width: 250px;
+	line-height: 35px;
+	vertical-align: top;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+input {
+	width: 250px;
+	height: 20px;
+	padding: 4px 6px;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: middle;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+fieldset {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+                   /*la partie ajoutée par moi*/
+
+
+
+.container {
+	/*display: flex;
+	align-items: center;
+	width: 100%;*/
+	width: 660px;
+  position: relative;
+  margin: 0 auto
+  }
+  
+  
+  
+label input[type="range"] {
+	width: 40%;
+	height: 10px;
+	background-color: #4CAF50; /* Couleur de remplissage de la barre */
+	border-radius: 5px; /* Coins arrondis de la barre */
+  }
+  header {
+	text-align: center;
+  }
+
+  
+
+            
+.poubelle {
+	margin-left: 100 px;
+}
+
+                              /*la partie demandé dans l'enonce  */
+
+
+ /* Style pour les lignes paires du tableau */
+table tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+ /* Visuel des champs non valides */
+ input:invalid {
+	border: 1px solid red;
+	text-shadow: 0 0 1px rgb(10, 10, 10);
+	background-color:	 rgb(227 176 202);
+  }
+
+ /* Visuel des champs valides */
+ input:valid {
+	border: 1px solid green;
+	text-shadow: none;
+	background-color: lightgreen;
+  }
+/* Style de base pour le titre */
+h1 {
+	transition: transform 1s; 
+		background: linear-gradient(to bottom, #4e0296, #EE82EE);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	  
+  }
+  
+  /* Style pour la rotation au survol */
+  h1:hover {
+	transform: rotate(360deg);
+  }
+ 
+  @media screen and (max-width: 768px) {
+	.container {
+	  width: calc(100% - 40px);
+	  max-width: 100%; } }
+  @media screen and (max-width: 480px) {
+	.container {
+	  padding: 50px 25px; } }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <script src="jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="fichier.js"></script>
+    <title>Gestionnaire de contacts</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Gestionnaire de contacts</h1>
+        </header>
+        <section>
+            <article>
+                <header>
+                    <h1>Ajout d'un contact</h1>
+                </header>
+                <details>
+                    <summary>
+                        Cliquer pour voir le formulaire.
+                    </summary>
+                    <form id="contact-form" onsubmit="return validerFormulaire()">
+                        <fieldset>
+                            <legend>Nouveau contact</legend>
+                            <label>
+                                <span>Nom :</span>
+                                <input type="text" id="nom"  pattern="^[^%&\$]*$" placeholder="Entrez votre nom"  required>
+                            </label>
+                            <label>
+                                <span>Prénom :</span>
+                                <input type="text" id="prenom"  pattern="^[^%&\$]*$"   placeholder="Entrez votre prénom" required>
+                            </label>
+                            <label>
+                                <span>Téléphone :</span>
+                                <input type="tel" id="telephone"  pattern="^[^%&\$]*$"  placeholder="+216 99 99 99" required>
+                            </label>
+                            <label>
+                                <span>Email :</span>
+                                <input type="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@enit\.utm\.tn$" value="@enit.utm.tn" required>
+                            </label>
+                            <label>
+                                <span>Date de naissance :</span>
+                                <input type="date" id="date_naissance" oninput="verifDate(this.value)">
+                            </label>
+                            <label>
+                                <span>Nombre d'enfants :</span>
+                                0 <input type="range" id="enfants" min="0" max="5"> 5
+                              </label>
+                        </fieldset>
+                        <button id="Ajouter-client" type="submit">OK</button>
+                    </form>
+                </details>
+            </article>
+            <article>
+                <header>
+                    <h1>Liste des contacts</h1>
+                </header>
+                <table id="tableau-contacts">
+                    <thead>
+                        <tr>
+                            <th>Indice ligne</th>
+                            <th></th>
+    
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Téléphone</th>
+                            <th>Email</th>
+                            <th>Date de naissance</th>
+                            <th>Nombre enfants</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+    
+    
+                    </tbody>
+                </table>
+                <div class="poubelle">
+                         <img id="poubelle" src="poubelle.png">
+                </div>
+           
+                    </article>
+        </section>
+      </div>
+   
+
+
+    <footer>Enit - Formation HTML5 </footer>
+</body>
