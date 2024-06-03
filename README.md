@@ -23,6 +23,4 @@ HTML5, CSS, JavaScript, Bootstrap
 
 **Lien vers le site web**
 
-https://getcontact.com/id/manage
-
 ![Capture d’écran (78)](https://github.com/siwar630/Gestionnaire_De_Contact/assets/130316042/d4983161-cc44-49c3-aed1-aa46119d2e11)
